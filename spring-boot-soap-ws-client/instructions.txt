@@ -1,0 +1,22 @@
+1. Run application from SpringBootHelloWorldApplication.java main method
+
+2. access wsdl file from -
+http://localhost:8080/javainuse/ws/wsdl/helloworld.wsdl
+OR
+http://localhost:8080/javainuse/ws/helloworld.wsdl
+
+Client ::
+open soapUI and pass wsdl url or wsdl file path for new soap project
+
+To create JAVA client -
+1. create new folder 
+2. open command prompt
+3. run the below command to generate the classes for client
+ $ wsimport -keep http://localhost:8080/javainuse/ws/wsdl/helloworld.wsdl
+ or
+ $ wsimport -keep <absolute .wsdl file path>
+ 
+ 4. create new maven project and that generate classes and create client SpringBootSoapClientApplication with main method to run this operations
+ 
+ 
+
